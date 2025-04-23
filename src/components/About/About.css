@@ -1,0 +1,170 @@
+.about-section {
+  padding: 6rem 0;
+  background-color: #1A0B2E;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 754px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 400px;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.skills-circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-icon {
+  position: absolute;
+  width: 60px;
+ left: 550px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.1) !important;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.central-logo {
+  position: relative;
+  z-index: 2;
+}
+
+.logo-circle {
+  width: 100px;
+  height: 100px;
+  background: rgba(152, 87, 211, 0.2);
+  border: 2px solid #9857D3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    padding: 4rem 0;
+  }
+
+  .skills-circle {
+    width: 250px;
+    height: 250px;
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo-circle {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+.about-text {
+  color: #fff;
+}
+
+.about-title {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-title {
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.skill-description {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 4rem 0;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

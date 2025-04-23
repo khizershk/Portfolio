@@ -1,0 +1,124 @@
+.contact-section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 6rem 2rem;
+  background: #1A0B2E;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.section-title {
+  color: #fff;
+  font-family: 'Preahvihear', sans-serif;
+  font-size: 42px;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 20px rgba(152, 87, 211, 0.3);
+}
+
+.contact-content {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3rem;
+  border: 1px solid rgba(152, 87, 211, 0.2);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+}
+
+.contact-message {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-family: 'Preahvihear', sans-serif;
+}
+
+.email-link {
+  display: inline-block;
+  color: #9857D3;
+  font-size: 24px;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-family: 'Preahvihear', sans-serif;
+  text-shadow: 0 0 10px rgba(152, 87, 211, 0.3);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(152, 87, 211, 0.1);
+  border: 1px solid rgba(152, 87, 211, 0.2);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: rgba(152, 87, 211, 0.2);
+  border-color: #9857D3;
+  box-shadow: 0 0 20px rgba(152, 87, 211, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 1rem;
+  }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 2rem;
+  }
+
+  .contact-content {
+    padding: 2rem;
+  }
+
+  .contact-message {
+    font-size: 16px;
+  }
+
+  .email-link {
+    font-size: 20px;
+  }
+
+  .social-links {
+    gap: 1.5rem;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
